@@ -23,10 +23,12 @@ jobs:
             - name: Setup Node
               uses: actions/setup-node@v6
               with:
-                  node-version: '25'
+                  node-version: '20'
                   registry-url: 'https://registry.npmjs.org'
             - name: Install dependencies
               run: npm install
+            - name: update npm
+              run: npm install -g npm@11.5.1
             - name: Upload release
               run: npm publish --access public
             - name: Tag release
