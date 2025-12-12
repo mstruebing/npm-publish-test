@@ -1,6 +1,10 @@
 {
   "name": "@mstruebing/npm-publish-test",
   "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://github.com:mstruebing/npm-publish-test.git"
+  },
   "access": "public",
   "version": "2.0.0",
   "description": "",
