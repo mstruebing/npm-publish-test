@@ -30,7 +30,7 @@ jobs:
             - name: update npm
               run: npm install -g npm@11.5.1
             - name: Upload release
-              run: npm publish --access public
+              run: npm publish --access public --tag ${{ github.event.inputs.releaseVersion }}
             - name: Tag release
               run: |
                   git config --global user.name 'Github Bot'
